@@ -1,0 +1,132 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.cards {
+  padding: 5%;
+  border-radius: 5%;
+  text-align: left;
+  font-size: 15px;
+}
+
+.car-icon {
+  width: 25%;
+  margin: 15% 0 15% 0;
+}
+
+h2 {
+  font-family: "Big Shoulders Text", cursive;
+  padding-bottom: 10%;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: hsl(0, 0%, 100%);
+}
+.sedans,
+.suvs,
+.luxury {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 70vh;
+  padding: 5% 15% 8% 15%;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+
+.learn-more {
+  background: hsl(0, 0%, 100%);
+  width: 65%;
+  border: none;
+  border-radius: 30px;
+  padding: 5% 10% 5% 10%;
+  margin: 5% 0 15% 0;
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+}
+
+.to-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.to-sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.to-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.to-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.to-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (min-width: 600px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    padding: 5%;
+  }
+
+  button {
+    max-width: 100%;
+    font-size: 13px;
+    padding: 2% 5% 2% 5%;
+    margin: 15% 0 15% 0;
+  }
+  p {
+    padding: 0;
+  }
+
+  .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+    padding: 2% 5% 5% 5%;
+  }
+
+  .suvs {
+    padding: 2% 5% 5% 5%;
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+    padding: 2% 5% 5% 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  button {
+    font-size: 15px;
+  }
+
+  .learn-more {
+    margin-top: 60px;
+  }
+}
